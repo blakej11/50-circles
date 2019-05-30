@@ -1,0 +1,15 @@
+#!/bin/ksh -p
+#
+# A script to set up a new circle.
+#
+
+cd $HOME/circles/circles || exit 1
+/bin/ls -d c[0-9]* | tail -1 | sed 's/c//' | read last
+next=$(printf "c%02d" $((( $last + 1 ))) )
+mkdir $next || exit 1
+
+( cd $next ; 
+  cp ../c00/c00.pde ./$next.pde
+  ln -s ../../main/main.pde ./main.pde
+  ln -s ../../main/JAVA2D.pde ./renderer.pde )
+echo "$next"
