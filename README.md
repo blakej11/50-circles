@@ -1,8 +1,9 @@
 # Fifty Ways to Draw a Circle
 
 This project is an exploration of generating a circle in fifty different
-ways.  You can read about the motivation for the project [here](http://XXX).
-This was inspired by Manohar Vanga's [very similar
+ways.  You can read about the motivation for the project
+[here](https://foo.net/projects/50-circles/).  This was inspired by Manohar
+Vanga's [very similar
 project](http://sighack.com/post/seventy-five-ways-to-draw-a-circle), but the
 code is all my own.
 
@@ -12,7 +13,7 @@ The circles are all implemented using the [Java version of
 Processing](https://processing.org/). I took one of the ideas 
 [(#08)](/circles/c08/) and reimplemented it in the [Javascript version of
 Processing](https://p5js.org/), to make a web app that creates [stained glass
-window patterns](http://foo.net/~blakej/art/glass/). XXX update URL?
+window patterns](https://foo.net/projects/glass/).
 
 The source code for each circle is stored in its own directory. Each circle
 is meant to stand on its own, and can be used elsewhere, but there are some
@@ -53,44 +54,45 @@ For some discussion of the differences in renderer behavior, see
 
 Three of the sketches ([#40](/circles/c40/), [#41](/circles/c41/),
 [#42](/circles/c42/)) use Lee Byron's "Mesh" library to create Voronoi
-diagrams. The [web page](http://leebyron.com/mesh/) for the library describes
+diagrams. The [web page](https://leebyron.com/mesh/) for the library describes
 how to install it.
 
 I added a fourth constraint to my implementation, aside from the three
-mentioned in [my description](http://XXX). Namely, I wanted each circle to be
-totally recreatable given a random seed.  The implementations of `main()` in
-pick.pde and grow.pde work together on this - they both seed Processing's
-random number generators before drawing a given circle, and pick.pde keeps
-track of which random seeds it used and stores them in a text file after
-it's done. You can see the random seeds used to create each of the sample
-images [here](/images/metadata/).
+mentioned in [my description](https://foo.net/projects/50-circles/). Namely, I
+wanted each circle to be totally recreatable given a random seed.  The
+implementations of `main()` in pick.pde and grow.pde work together on this -
+they both seed Processing's random number generators before drawing a given
+circle, and pick.pde keeps track of which random seeds it used and stores them
+in a text file after it's done. You can see the random seeds used to create
+each of the sample images
+[here](https://foo.net/projects/50-circles/images/metadata.txt).
 
 ### Images
 
 |     |     |
 |:---:|:---:|
-|[![](/images/660/c01.png?raw=true)](/images/1320/c01.png?raw=true) |[![](/images/660/c02.png?raw=true)](/images/1320/c02.png?raw=true) |
-|[![](/images/660/c03.png?raw=true)](/images/1320/c03.png?raw=true) |[![](/images/660/c04.png?raw=true)](/images/1320/c04.png?raw=true) |
-|[![](/images/660/c05.png?raw=true)](/images/1320/c05.png?raw=true) |[![](/images/660/c06.png?raw=true)](/images/1320/c06.png?raw=true) |
-|[![](/images/660/c07.png?raw=true)](/images/1320/c07.png?raw=true) |[![](/images/660/c08.png?raw=true)](/images/1320/c08.png?raw=true) |
-|[![](/images/660/c09.png?raw=true)](/images/1320/c09.png?raw=true) |[![](/images/660/c10.png?raw=true)](/images/1320/c10.png?raw=true) |
-|[![](/images/660/c11.png?raw=true)](/images/1320/c11.png?raw=true) |[![](/images/660/c12.png?raw=true)](/images/1320/c12.png?raw=true) |
-|[![](/images/660/c13.png?raw=true)](/images/1320/c13.png?raw=true) |[![](/images/660/c14.png?raw=true)](/images/1320/c14.png?raw=true) |
-|[![](/images/660/c15.png?raw=true)](/images/1320/c15.png?raw=true) |[![](/images/660/c16.png?raw=true)](/images/1320/c16.png?raw=true) |
-|[![](/images/660/c17.png?raw=true)](/images/1320/c17.png?raw=true) |[![](/images/660/c18.png?raw=true)](/images/1320/c18.png?raw=true) |
-|[![](/images/660/c19.png?raw=true)](/images/1320/c19.png?raw=true) |[![](/images/660/c20.png?raw=true)](/images/1320/c20.png?raw=true) |
-|[![](/images/660/c21.png?raw=true)](/images/1320/c21.png?raw=true) |[![](/images/660/c22.png?raw=true)](/images/1320/c22.png?raw=true) |
-|[![](/images/660/c23.png?raw=true)](/images/1320/c23.png?raw=true) |[![](/images/660/c24.png?raw=true)](/images/1320/c24.png?raw=true) |
-|[![](/images/660/c25.png?raw=true)](/images/1320/c25.png?raw=true) |[![](/images/660/c26.png?raw=true)](/images/1320/c26.png?raw=true) |
-|[![](/images/660/c27.png?raw=true)](/images/1320/c27.png?raw=true) |[![](/images/660/c28.png?raw=true)](/images/1320/c28.png?raw=true) |
-|[![](/images/660/c29.png?raw=true)](/images/1320/c29.png?raw=true) |[![](/images/660/c30.png?raw=true)](/images/1320/c30.png?raw=true) |
-|[![](/images/660/c31.png?raw=true)](/images/1320/c31.png?raw=true) |[![](/images/660/c32.png?raw=true)](/images/1320/c32.png?raw=true) |
-|[![](/images/660/c33.png?raw=true)](/images/1320/c33.png?raw=true) |[![](/images/660/c34.png?raw=true)](/images/1320/c34.png?raw=true) |
-|[![](/images/660/c35.png?raw=true)](/images/1320/c35.png?raw=true) |[![](/images/660/c36.png?raw=true)](/images/1320/c36.png?raw=true) |
-|[![](/images/660/c37.png?raw=true)](/images/1320/c37.png?raw=true) |[![](/images/660/c38.png?raw=true)](/images/1320/c38.png?raw=true) |
-|[![](/images/660/c39.png?raw=true)](/images/1320/c39.png?raw=true) |[![](/images/660/c40.png?raw=true)](/images/1320/c40.png?raw=true) |
-|[![](/images/660/c41.png?raw=true)](/images/1320/c41.png?raw=true) |[![](/images/660/c42.png?raw=true)](/images/1320/c42.png?raw=true) |
-|[![](/images/660/c43.png?raw=true)](/images/1320/c43.png?raw=true) |[![](/images/660/c44.png?raw=true)](/images/1320/c44.png?raw=true) |
-|[![](/images/660/c45.png?raw=true)](/images/1320/c45.png?raw=true) |[![](/images/660/c46.png?raw=true)](/images/1320/c46.png?raw=true) |
-|[![](/images/660/c47.png?raw=true)](/images/1320/c47.png?raw=true) |[![](/images/660/c48.png?raw=true)](/images/1320/c48.png?raw=true) |
-|[![](/images/660/c49.png?raw=true)](/images/1320/c49.png?raw=true) |[![](/images/660/c50.png?raw=true)](/images/1320/c50.png?raw=true) |
+|[![](https://foo.net/projects/50-circles/images/660/c01.png)](https://foo.net/projects/50-circles/images/1320/c01.png) |[![](https://foo.net/projects/50-circles/images/660/c02.png)](https://foo.net/projects/50-circles/images/1320/c02.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c03.png)](https://foo.net/projects/50-circles/images/1320/c03.png) |[![](https://foo.net/projects/50-circles/images/660/c04.png)](https://foo.net/projects/50-circles/images/1320/c04.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c05.png)](https://foo.net/projects/50-circles/images/1320/c05.png) |[![](https://foo.net/projects/50-circles/images/660/c06.png)](https://foo.net/projects/50-circles/images/1320/c06.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c07.png)](https://foo.net/projects/50-circles/images/1320/c07.png) |[![](https://foo.net/projects/50-circles/images/660/c08.png)](https://foo.net/projects/50-circles/images/1320/c08.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c09.png)](https://foo.net/projects/50-circles/images/1320/c09.png) |[![](https://foo.net/projects/50-circles/images/660/c10.png)](https://foo.net/projects/50-circles/images/1320/c10.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c11.png)](https://foo.net/projects/50-circles/images/1320/c11.png) |[![](https://foo.net/projects/50-circles/images/660/c12.png)](https://foo.net/projects/50-circles/images/1320/c12.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c13.png)](https://foo.net/projects/50-circles/images/1320/c13.png) |[![](https://foo.net/projects/50-circles/images/660/c14.png)](https://foo.net/projects/50-circles/images/1320/c14.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c15.png)](https://foo.net/projects/50-circles/images/1320/c15.png) |[![](https://foo.net/projects/50-circles/images/660/c16.png)](https://foo.net/projects/50-circles/images/1320/c16.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c17.png)](https://foo.net/projects/50-circles/images/1320/c17.png) |[![](https://foo.net/projects/50-circles/images/660/c18.png)](https://foo.net/projects/50-circles/images/1320/c18.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c19.png)](https://foo.net/projects/50-circles/images/1320/c19.png) |[![](https://foo.net/projects/50-circles/images/660/c20.png)](https://foo.net/projects/50-circles/images/1320/c20.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c21.png)](https://foo.net/projects/50-circles/images/1320/c21.png) |[![](https://foo.net/projects/50-circles/images/660/c22.png)](https://foo.net/projects/50-circles/images/1320/c22.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c23.png)](https://foo.net/projects/50-circles/images/1320/c23.png) |[![](https://foo.net/projects/50-circles/images/660/c24.png)](https://foo.net/projects/50-circles/images/1320/c24.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c25.png)](https://foo.net/projects/50-circles/images/1320/c25.png) |[![](https://foo.net/projects/50-circles/images/660/c26.png)](https://foo.net/projects/50-circles/images/1320/c26.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c27.png)](https://foo.net/projects/50-circles/images/1320/c27.png) |[![](https://foo.net/projects/50-circles/images/660/c28.png)](https://foo.net/projects/50-circles/images/1320/c28.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c29.png)](https://foo.net/projects/50-circles/images/1320/c29.png) |[![](https://foo.net/projects/50-circles/images/660/c30.png)](https://foo.net/projects/50-circles/images/1320/c30.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c31.png)](https://foo.net/projects/50-circles/images/1320/c31.png) |[![](https://foo.net/projects/50-circles/images/660/c32.png)](https://foo.net/projects/50-circles/images/1320/c32.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c33.png)](https://foo.net/projects/50-circles/images/1320/c33.png) |[![](https://foo.net/projects/50-circles/images/660/c34.png)](https://foo.net/projects/50-circles/images/1320/c34.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c35.png)](https://foo.net/projects/50-circles/images/1320/c35.png) |[![](https://foo.net/projects/50-circles/images/660/c36.png)](https://foo.net/projects/50-circles/images/1320/c36.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c37.png)](https://foo.net/projects/50-circles/images/1320/c37.png) |[![](https://foo.net/projects/50-circles/images/660/c38.png)](https://foo.net/projects/50-circles/images/1320/c38.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c39.png)](https://foo.net/projects/50-circles/images/1320/c39.png) |[![](https://foo.net/projects/50-circles/images/660/c40.png)](https://foo.net/projects/50-circles/images/1320/c40.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c41.png)](https://foo.net/projects/50-circles/images/1320/c41.png) |[![](https://foo.net/projects/50-circles/images/660/c42.png)](https://foo.net/projects/50-circles/images/1320/c42.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c43.png)](https://foo.net/projects/50-circles/images/1320/c43.png) |[![](https://foo.net/projects/50-circles/images/660/c44.png)](https://foo.net/projects/50-circles/images/1320/c44.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c45.png)](https://foo.net/projects/50-circles/images/1320/c45.png) |[![](https://foo.net/projects/50-circles/images/660/c46.png)](https://foo.net/projects/50-circles/images/1320/c46.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c47.png)](https://foo.net/projects/50-circles/images/1320/c47.png) |[![](https://foo.net/projects/50-circles/images/660/c48.png)](https://foo.net/projects/50-circles/images/1320/c48.png) |
+|[![](https://foo.net/projects/50-circles/images/660/c49.png)](https://foo.net/projects/50-circles/images/1320/c49.png) |[![](https://foo.net/projects/50-circles/images/660/c50.png)](https://foo.net/projects/50-circles/images/1320/c50.png) |
